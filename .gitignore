@@ -4,3 +4,7 @@ venv/
 .idea/
 .m2/
 .env
+Terraform/.terraform/
+Terraform/*.tfstate
+Terraform/*.tfstate.backup
+Terraform/tfplan
