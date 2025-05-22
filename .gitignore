@@ -7,4 +7,5 @@ venv/
 Terraform/.terraform/
 Terraform/*.tfstate
 Terraform/*.tfstate.backup
-Terraform/tfplan
+Terraform/tfplanMaven/target/*.jar
+Maven/target/dependency-reduced-pom.xml
