@@ -1,0 +1,6 @@
+target/
+*.jar
+venv/
+.idea/
+.m2/
+.env
