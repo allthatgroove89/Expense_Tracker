@@ -1,19 +1,15 @@
 package com.expensetracker;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
+import com.google.gson.JsonObject;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest {
-
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
+    void testSecretRetrieval() {
+        JsonObject secretData = App.getSecret();
+        assertNotNull(secretData);
+        assertTrue(secretData.has("db_user"));
+        assertTrue(secretData.has("db_pass"));
     }
 }
